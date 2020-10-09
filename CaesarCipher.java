@@ -14,6 +14,12 @@ public class CaesarCipher{
         word = input.nextLine();
         pText = deCipher(word);
         System.out.println("%n%nCipher Text: %s%n", word, pText);
-
     }
+    public static String cipher (String pText){
+        String word = " ";
+        for (int i = 0; i < pText.length; i++){
+
+        }
+    }
+
 }
