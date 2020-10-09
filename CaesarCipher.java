@@ -10,5 +10,10 @@ public class CaesarCipher{
         newWord = deCipher(word);
 
         System.out.println("Plain text: %s%n" + "Cipher Text: %s%n" + "Plain text: %s%n%n", pText, word, newWord);
+        System.out.println("Enter the string you would like to decrypt");
+        word = input.nextLine();
+        pText = deCipher(word);
+        System.out.println("%n%nCipher Text: %s%n", word, pText);
+
     }
 }
