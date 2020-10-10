@@ -7,13 +7,13 @@ public class CaesarCipher{
         System.out.printf("Enter the string you would like to encrypt: ");
         pText = input.nextLine();
         word = cipher(pText);
-      //  newWord = deCipher(word);
+        newWord = deCipher(word);
 
         System.out.printf("Plain text: %s%n" + "Cipher Text: %s%n" + "Plain text: %s%n%n", pText, word, newWord);
         System.out.printf("Enter the string you would like to decrypt: ");
         word = input.nextLine();
 
-        //pText = deCipher(word);
+        pText = deCipher(word);
         System.out.printf("%n%nCipher Text: %s%n", word, pText);
     }
     public static String cipher (String pText){
@@ -53,4 +53,7 @@ public class CaesarCipher{
         }
     return word;}
 
+    public static String deCipher(String deText) {
+
+    }
 }
