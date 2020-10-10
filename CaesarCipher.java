@@ -1,56 +1,56 @@
-import  java.util.scanner;
+import  java.util.Scanner;
 
 public class CaesarCipher{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String word = " ", pText = " ", newWord = "";
-        System.out.println("Enter the string you would like to encrypt: ");
+        System.out.printf("Enter the string you would like to encrypt: ");
         pText = input.nextLine();
         word = cipher(pText);
-        newWord = deCipher(word);
+      //  newWord = deCipher(word);
 
-        System.out.println("Plain text: %s%n" + "Cipher Text: %s%n" + "Plain text: %s%n%n", pText, word, newWord);
-        System.out.println("Enter the string you would like to decrypt");
+        System.out.printf("Plain text: %s%n" + "Cipher Text: %s%n" + "Plain text: %s%n%n", pText, word, newWord);
+        System.out.printf("Enter the string you would like to decrypt: ");
         word = input.nextLine();
-        pText = deCipher(word);
-        System.out.println("%n%nCipher Text: %s%n", word, pText);
+
+        //pText = deCipher(word);
+        System.out.printf("%n%nCipher Text: %s%n", word, pText);
     }
     public static String cipher (String pText){
         String word = " ";
-        for (int i = 0; i < pText.length; i++){
+        for (int i = 0; i < pText.length(); i++){
             char code = Character.toLowerCase(pText.charAt(i));
             switch (code){
                 case 'e':
                     word += "!";
                     break;
-                    case 't';
+                case 't':
                     word += "@";
                     break;
-                    case 'a';
+                case 'a':
                     word += "#";
                     break;
-                    case 'o';
+                case 'o':
                     word += "$";
                     break;
-                    case 'i';
+                case 'i':
                     word += "%";
                     break;
-                    case 'n';
+                case 'n':
                     word += "^";
                     break;
-                    case 's';
+                case 's':
                     word += "&";
                     break;
-                    case 'r';
+                case 'r':
                     word += "*";
                     break;
                     default:
-
-
-
+                        word += pText.charAt(i);
+                        break;
             }
 
         }
-    }
+    return word;}
 
 }
