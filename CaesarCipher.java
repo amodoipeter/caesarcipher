@@ -18,6 +18,37 @@ public class CaesarCipher{
     public static String cipher (String pText){
         String word = " ";
         for (int i = 0; i < pText.length; i++){
+            char code = Character.toLowerCase(pText.charAt(i));
+            switch (code){
+                case 'e':
+                    word += "!";
+                    break;
+                    case 't';
+                    word += "@";
+                    break;
+                    case 'a';
+                    word += "#";
+                    break;
+                    case 'o';
+                    word += "$";
+                    break;
+                    case 'i';
+                    word += "%";
+                    break;
+                    case 'n';
+                    word += "^";
+                    break;
+                    case 's';
+                    word += "&";
+                    break;
+                    case 'r';
+                    word += "*";
+                    break;
+                    default:
+
+
+
+            }
 
         }
     }
