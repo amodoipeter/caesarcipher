@@ -56,6 +56,7 @@ public class CaesarCipher{
     public static String deCipher(String deText) {
         String newWord = "";
         for (int i = 0; i < deText.length(); i++){
+            char code = Character.toLowerCase(deText.charAt(i));
 
         }
     }
