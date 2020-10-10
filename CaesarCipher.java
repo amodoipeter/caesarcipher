@@ -14,7 +14,7 @@ public class CaesarCipher{
         word = input.nextLine();
 
         pText = deCipher(word);
-        System.out.printf("%n%nCipher Text: %s%n", word, pText);
+        System.out.printf("%n%nCipher Text: %s%n" +  "PlainText: %s%n", word, pText);
     }
     public static String cipher (String pText){
         String word = " ";
@@ -57,7 +57,36 @@ public class CaesarCipher{
         String newWord = "";
         for (int i = 0; i < deText.length(); i++){
             char code = Character.toLowerCase(deText.charAt(i));
-
+            switch (code){
+                case '!':
+                    newWord += "e";
+                    break;
+                case '@':
+                    newWord += "t";
+                    break;
+                case '#':
+                    newWord += "a";
+                    break;
+                case '$':
+                    newWord += "o";
+                    break;
+                case '%':
+                    newWord += "i";
+                    break;
+                case '^':
+                    newWord += "n";
+                    break;
+                case '&':
+                    newWord += "s";
+                    break;
+                case '*':
+                    newWord += "r";
+                    break;
+                default:
+                    newWord += deText.charAt(i);
+                    break;
+            }
         }
+        return newWord;
     }
 }
