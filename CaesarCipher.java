@@ -54,6 +54,9 @@ public class CaesarCipher{
     return word;}
 
     public static String deCipher(String deText) {
+        String newWord = "";
+        for (int i = 0; i < deText.length(); i++){
 
+        }
     }
 }
