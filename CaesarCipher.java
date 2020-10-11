@@ -75,7 +75,7 @@ public class CaesarCipher{
                 case 'r':
                     word += "s";
                     break;
-                case 'S':
+                case 's':
                     word += "t";
                     break;
                 case 't':
