@@ -21,31 +21,85 @@ public class CaesarCipher{
         for (int i = 0; i < pText.length(); i++){
             char code = Character.toLowerCase(pText.charAt(i));
             switch (code){
-                case 'e':
-                    word += "!";
+                case 'A':
+                    word += "B";
                     break;
-                case 't':
-                    word += "@";
+                case 'B':
+                    word += "C";
                     break;
-                case 'a':
-                    word += "#";
+                case 'C':
+                    word += "D";
                     break;
-                case 'o':
-                    word += "$";
+                case 'D':
+                    word += "E";
                     break;
-                case 'i':
-                    word += "%";
+                case 'E':
+                    word += "F";
                     break;
-                case 'n':
-                    word += "^";
+                case 'F':
+                    word += "G";
                     break;
-                case 's':
-                    word += "&";
+                case 'G':
+                    word += "H";
                     break;
-                case 'r':
-                    word += "*";
+                case 'H':
+                    word += "I";
                     break;
-                    default:
+                case 'I':
+                    word += "J";
+                    break;
+                case 'J':
+                    word += "K";
+                    break;
+                case 'K':
+                    word += "L";
+                    break;
+                case 'L':
+                    word += "M";
+                    break;
+                case 'M':
+                    word += "N";
+                    break;
+                case 'N':
+                    word += "O";
+                    break;
+                case 'O':
+                    word += "P";
+                    break;
+                case 'P':
+                    word += "Q";
+                    break;
+                case 'Q':
+                    word += "R";
+                    break;
+                case 'R':
+                    word += "S";
+                    break;
+                case 'S':
+                    word += "T";
+                    break;
+                case 'T':
+                    word += "U";
+                    break;
+                case 'U':
+                    word += "V";
+                    break;
+                case 'V':
+                    word += "W";
+                    break;
+                case 'W':
+                    word += "X";
+                    break;
+                case 'X':
+                    word += "Y";
+                    break;
+                case 'Y':
+                    word += "Z";
+                    break;
+                case 'Z':
+                    word += "A";
+                    break;
+                default:
                         word += pText.charAt(i);
                         break;
             }
